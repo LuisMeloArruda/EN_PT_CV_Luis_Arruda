@@ -1,4 +1,18 @@
 * {
     box-sizing: border-box;
-    background-color: rgb(87, 8, 8);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cv_section {
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    
+    #luis_arruda_cv {
+        width: 60em;
+        height: 80em;
+    }
 }
