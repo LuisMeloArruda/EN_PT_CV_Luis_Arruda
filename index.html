@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Luís Arruda</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <section class="cv_section">
-        <embed id="luis_arruda_cv" src="assets/[PT]_CV_Luís_Arruda.pdf">
+  </head>
+  <body>
+    <section class="top-bar">
+      <div class="language-switch" title="Switch Language">
+        <button onclick="setLanguage('pt')">🇵🇹</button>
+        <button onclick="setLanguage('en')">🇬🇧</button>
+      </div>
+  
+      <div class="mode-switch" onclick="toggleTheme()" title="Switch between dark/light mode">
+        <figure id="theme-figure"></figure>
+      </div>
     </section>
-</body>
+
+    <section class="container">
+      <div class="intro">
+        <div class="profile-container">
+          <img src="assets/img/luis.jpg" alt="Foto de Luís Arruda" class="profile-pic">
+        </div>
+
+        <div class="text-container">
+          <h1 data-lang-pt="Olá, eu sou o Luís Arruda"
+              data-lang-en="Hello, I’m Luís Arruda"></h1>
+
+          <p data-lang-pt="Sou estudante de informática apaixonado por IA e desenvolvimento web."
+            data-lang-en="I’m a computer science student passionate about AI and web development."></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
